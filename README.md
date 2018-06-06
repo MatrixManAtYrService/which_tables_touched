@@ -31,6 +31,7 @@ Do this just once
 #### Exit virtual environment
 
 `which-venv ❯ ` `deactivate`
+
 `❯ `
 
 ## For more, try --help
