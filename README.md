@@ -15,21 +15,21 @@ Do this just once (it will create a directory)
 
 #### Enter a virtual environment
 
-`❯ ``source which-venv/bin/activate`
+`❯ ` `source which-venv/bin/activate`
 
 #### Prepare environment
 Do this just once
 
-`which-venv ❯ ``pip install --upgrade pip`
-`which-venv ❯ ``pip install -r requirements.txt`
+`which-venv ❯ ` `pip install --upgrade pip`
+`which-venv ❯ ` `pip install -r requirements.txt`
 
 #### Run it
 
-`which-venv ❯ ``python which_tables.py mysql_general.log --database meta --user root --password test`
+`which-venv ❯ ` `python which_tables.py mysql_general.log --database meta --user root --password test`
 
 #### Exit virtual environment
 
-`which-venv ❯ ``deactivate`
+`which-venv ❯ ` `deactivate`
 `❯ `
 
 ## For more, try --help
