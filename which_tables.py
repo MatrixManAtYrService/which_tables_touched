@@ -18,7 +18,10 @@ def parse_args():
     duser = 'root'
     dpasswd= 'thangs'
 
-    # not always necessary, this works around an oddity I found one day
+    # not always necessary, this works around an oddity I found one day:
+    #    _mysql_exceptions.OperationalError: (2002, "Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2)")
+    # if you see that error, go uncomment socket-related things below
+
     #if platform == "linux" or platform == "linux2":
     #    dsocket= str(awk(netstat('-ln'), '/mysql(.*)?\.sock/ { print $9 }')).strip()
     #elif platform == "darwin":
