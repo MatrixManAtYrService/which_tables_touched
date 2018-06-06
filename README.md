@@ -11,7 +11,7 @@ It does not parse the SQL.  Instead it connects to the database and finds the li
 #### Create a virtual environment
 Do this just once (it will create a directory)
 
-`❯ ``python3 -m venv which-venv`
+`❯ ` `python3 -m venv which-venv`
 
 #### Enter a virtual environment
 
@@ -21,6 +21,7 @@ Do this just once (it will create a directory)
 Do this just once
 
 `which-venv ❯ ` `pip install --upgrade pip`
+
 `which-venv ❯ ` `pip install -r requirements.txt`
 
 #### Run it
