@@ -2,7 +2,7 @@
 
 This is a python script which will accept a mysql general log file and print out the names of the tables that were mentioned.
 
-It does not parse the SQL.  Instead it connects to the database and finds the list of tables.  Then it finds which of those appear in the log file
+It does not parse the SQL.  Instead it connects to the database and finds the list of tables.  Then it filters the log file based on what it found in the database.  If you have tables named `select`, expect them to show up as false-positives.
 
 ## To use
 
