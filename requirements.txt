@@ -4,5 +4,5 @@
 #
 #    pip-compile --output-file requirements.txt requirements.in
 #
-mysql-connector==2.1.6
+mysqlclient==1.3.12
 sh==1.12.14
