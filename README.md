@@ -26,7 +26,7 @@ Do this just once
 
 #### Run it
 
-`which-venv ❯ ` `python which_tables.py mysql_general.log --database meta --user root --password test`
+`which-venv ❯ ` `python which_tables.py mysql_general.log --database moonpie --user root --password thangs`
 
 #### Exit virtual environment
 
