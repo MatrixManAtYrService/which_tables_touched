@@ -3,7 +3,7 @@
 # given a database and a mysql general log file, list the tables that were touched during the log session
 
 import os
-import MySQLdb
+import pymysql
 import argparse
 import re
 from sys import platform
@@ -57,13 +57,13 @@ def get_candidates(in_file):
         #      ).split()                                                   # as a list of words
 
         # this is faster
-        command = '''cat {} | tr -s [:space:] '\n' | tr -c -d '[a-zA-Z0-9][:space:][_\-]' | egrep -v '[0-9]' | sort | uniq'''.format(in_file)
+        command = '''cat {} | grep Query | tr -s [:space:] '\n' | tr -c -d '[a-zA-Z0-9][:space:][_\-]' | egrep -v '[0-9]' | sort | uniq'''.format(in_file)
         return str(bash(['-c', command])).split() # as a list of words
 
 def main(args):
 
     # connect to the database
-    db=MySQLdb.connect(
+    db=pymysql.connect(
             host='localhost',
             user=args.user,
             passwd=args.password,
